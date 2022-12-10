@@ -11,7 +11,7 @@ class Squirrel {
   }
 
   start() {
-    this.dom.src = 'squirrel.gif';
+    this.dom.src = 'src/squirrel.gif';
     this.posX = 10;
     this.posY = 0;
     this.dom.style.left = this.posX + 'px';
@@ -21,7 +21,7 @@ class Squirrel {
   }
 
   stop() {
-    this.dom.src = 'squirrel_stop.png';
+    this.dom.src = 'src/squirrel_stop.png';
   }
 
   jump() {
@@ -52,7 +52,7 @@ class Squirrel {
   }
 
   explode() {
-    this.dom.src = 'explosion.png';
+    this.dom.src = 'src/explosion.png';
     //delay is a "graphic trick"
     window.setTimeout(() => {
       this.ableToJump = false;
